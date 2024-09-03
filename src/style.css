@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    cursor: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+}
+h1 {
+    color: aliceblue;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    font-style: normal;
+}
+.smoke {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    animation: smoke 1s linear;
+}
+@keyframes smoke {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+        width: 100px;
+        height: 100px;
+    }
+}
